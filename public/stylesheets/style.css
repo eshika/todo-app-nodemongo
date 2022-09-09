@@ -1,37 +1,47 @@
+/* Set global styling settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set background color to orange */
 body {
     background: #e27442;
 }
 
+/* Style the container that holds the todo header and text box and tasks */
 .todo-container {
     color: white;
+    /* Put container in the middle of the page */
     position: absolute;
     top:50%;
     left: 50%;
     padding: 20px;
     width: 600px;
     transform: translate(-50%,-50%);
+    /* Mostly transparent white background  */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    /* Center items within the container */
     align-items: center;
 }
+
+/* Set size of the form to be slightly less than the container */
 .todo {
     width: 400px;
 }
 
+/* Set font and size of the To Do List header */
 .todo-container h2 {
     padding: 10px;
     font-family: 'Candal', sans-serif;
     font-size: 2em;
 }
 
+/* Style the input text box size, font, and border */
 .todo-header input {
     width: 92%;
     border: none;
@@ -40,6 +50,7 @@ body {
     font-family: 'Candal', sans-serif;
 }
 
+/* Style submit button to be green with same font and white text */
 .todo-header button {
     color: white;
     border: none;
@@ -50,10 +61,12 @@ body {
     background-color: rgb(51, 212, 100);
 }
 
+/* No bullet points or list item markers for the list */
 .todo-container ul {
     list-style: none;
 }
 
+/* Style each list item (task) with same font and translucent black background */
 .todo-list-item {
     padding: 10px;
     margin-top: 10px;
@@ -65,11 +78,13 @@ body {
     flex-direction: row;
 }
 
+/* Style editing form when edit is clicked */
 .todo-list-item form {
     width: 100%;
     display: flex;
 }
 
+/* Style input box when editing a task */
 .todo-list-item input {
     flex-grow: 2;
     margin-right: 20px;
@@ -78,6 +93,7 @@ body {
     font-family: 'Candal', sans-serif;
 }
 
+/* Style confirm button when editing a task */
 .todo-list-item button {
     color: white;
     border: none;
@@ -88,6 +104,7 @@ body {
     background-color: rgb(51, 212, 100);
 }
 
+/* Style cancel button when editing a task */
 .todo-list-item .cancel {
     color: white;
     text-decoration: none;
@@ -100,10 +117,12 @@ body {
     margin-left: 5px;
 }
 
+/* Sets how much of the space in the container is assigned to the item */
 .todo-list-item div {
     flex-grow: 2;
 }
 
+/* Style edit button for each todo item */
 .todo-list-item .edit {
     color : rgb(143, 233, 58);
     margin-right: 10px;
@@ -111,6 +130,7 @@ body {
     text-decoration: none;
 }
 
+/* Style remove button for each todo item */
 .todo-list-item .remove {
     color : rgb(243, 96, 96);
     margin-right: 5px;
